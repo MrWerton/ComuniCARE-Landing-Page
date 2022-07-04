@@ -188,6 +188,9 @@ section {
   width: 100%;
   height: auto;
 }
+#Home .section_content .illustration .buttons {
+  display: none;
+}
 #Home .section_content .description {
   display: flex;
   align-items: center;
@@ -203,56 +206,24 @@ section {
   font-size: 32px;
   margin-top: 10px;
 }
-#Home .section_content .description .buttons {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
-  gap: 10px;
-  width: 100%;
-}
-@media (max-width: 600px) {
-  #Home .section_content .description .buttons {
-    flex-direction: column;
-  }
-}
-#Home .section_content .description .buttons .download_button {
-  all: unset;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  cursor: pointer;
-  padding: 1rem;
-  background-color: white;
-  border-radius: 10px;
-}
-#Home .section_content .description .buttons .download_button:hover {
-  opacity: 0.8;
-}
-#Home .section_content .description .buttons .download_button span {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#Home .section_content .description .buttons .download_button span i {
-  text-align: center;
-  font-size: 24px;
-  margin-right: 10px;
-}
 @media (max-width: 760px) {
   #Home .section_content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   #Home .section_content .illustration {
     flex: 1;
+    flex-direction: column;
+    display: flex;
   }
   #Home .section_content .illustration img {
     -o-object-fit: contain;
        object-fit: contain;
     width: 100%;
     height: auto;
+  }
+  #Home .section_content .illustration .buttons {
+    display: flex;
+    width: auto;
   }
   #Home .section_content .description {
     justify-content: flex-start;
@@ -265,8 +236,50 @@ section {
   }
   #Home .section_content .description p {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
   }
+  #Home .section_content .description .buttons {
+    display: none;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 10px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
+.buttons .download_button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+.buttons .download_button:hover {
+  opacity: 0.8;
+}
+.buttons .download_button span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons .download_button span i {
+  text-align: center;
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 #Benefit {
