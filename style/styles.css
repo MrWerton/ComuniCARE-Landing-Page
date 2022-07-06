@@ -15,7 +15,9 @@ body {
   min-width: 100vw;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #fbfcff;
+  background: -webkit-gradient(linear, left top, right top, from(#fbfcff), color-stop(27%, #f0f0ff), to(#5fb4ff));
+  background: linear-gradient(90deg, #fbfcff 0%, #f0f0ff 27%, #5fb4ff 100%);
   overflow-x: hidden;
 }
 
@@ -150,9 +152,6 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #fbfcff;
-    background: -webkit-gradient(linear, left top, right top, from(#fbfcff), color-stop(27%, #f0f0ff), to(#5fb4ff));
-    background: linear-gradient(90deg, #fbfcff 0%, #f0f0ff 27%, #5fb4ff 100%);
   }
   #header #navBar.act ul {
     display: -webkit-box;
@@ -211,9 +210,12 @@ section {
   min-height: 100vh;
   width: 100%;
   height: 100vh;
-  background: #fbfcff;
-  background: -webkit-gradient(linear, left top, right top, from(#fbfcff), color-stop(27%, #f0f0ff), to(#5fb4ff));
-  background: linear-gradient(90deg, #fbfcff 0%, #f0f0ff 27%, #5fb4ff 100%);
+}
+
+@media (max-width: 760px) {
+  section {
+    padding: 1rem;
+  }
 }
 
 #Home {
@@ -812,5 +814,77 @@ section {
   #Contact .section_content .box_form form button {
     padding: 0.6rem;
   }
+}
+
+footer {
+  padding: 2rem 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer strong {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+footer ul li {
+  margin-left: 10px;
+}
+
+footer ul li :hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  padding: 5px;
+}
+
+footer ul li a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
