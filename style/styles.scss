@@ -96,6 +96,8 @@
                 top: 0;
                 left: 0;
                 bottom: 0;
+                background: rgb(251,252,255);
+                background: linear-gradient(90deg, rgba(251,252,255,1) 0%, rgba(240,240,255,1) 27%, rgba(95,180,255,1) 100%);
                 right: 0;
               
                ul{
@@ -124,6 +126,7 @@
        
            .MenuMobile{
             height: 1rem;
+         
                display: block;
                font-size: 3rem;
                margin-right: 10px;
@@ -317,6 +320,7 @@ section{
         }
       }
       
+      
     }
     .list_details{
       flex: 1;
@@ -332,7 +336,7 @@ section{
       .callout{
         width: 100%;
         max-width: 500px;
-        height: 180px;
+        height: 200px;
 
         background-color: #f8f9f9;
         border-radius: 10px;
@@ -352,11 +356,12 @@ section{
           }
           strong{
             height: 100%;
-            font-size: 24px;
+            text-transform: capitalize;
+            font-size: 1.5rem;
           }
         }
         p{
-          font-size: 18px;
+          font-size: 1.4rem;
           padding-bottom: 1rem;
         }
       }
@@ -386,6 +391,7 @@ section{
     .header_questions{
       flex: 1;
       width: 100%;
+      margin-bottom: 1rem;
     
       display: flex;
       align-items: center;
@@ -431,7 +437,7 @@ section{
           }
         }
         p{
-          font-size: 18px;
+          font-size: 1.3rem;
           padding: 1rem;
           @media (max-width: 600px) {
             padding: 14px;
@@ -567,7 +573,7 @@ footer{
   justify-content: center;
   flex-direction: column;
   strong{
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 1rem;
 
   }

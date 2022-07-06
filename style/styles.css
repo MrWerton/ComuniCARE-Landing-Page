@@ -151,6 +151,9 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
+    background: #fbfcff;
+    background: -webkit-gradient(linear, left top, right top, from(#fbfcff), color-stop(27%, #f0f0ff), to(#5fb4ff));
+    background: linear-gradient(90deg, #fbfcff 0%, #f0f0ff 27%, #5fb4ff 100%);
     right: 0;
   }
   #header #navBar.act ul {
@@ -491,7 +494,7 @@ section {
 #Benefit .section_content .list_details .callout {
   width: 100%;
   max-width: 500px;
-  height: 180px;
+  height: 200px;
   background-color: #f8f9f9;
   border-radius: 10px;
   padding: 1rem;
@@ -522,11 +525,12 @@ section {
 
 #Benefit .section_content .list_details .callout header strong {
   height: 100%;
-  font-size: 24px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 #Benefit .section_content .list_details .callout p {
-  font-size: 18px;
+  font-size: 1.4rem;
   padding-bottom: 1rem;
 }
 
@@ -564,6 +568,7 @@ section {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,7 +641,7 @@ section {
 }
 
 #Questions .section_content .questions_list p {
-  font-size: 18px;
+  font-size: 1.3rem;
   padding: 1rem;
 }
 
@@ -835,7 +840,7 @@ footer {
 }
 
 footer strong {
-  font-size: 24px;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
