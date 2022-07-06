@@ -861,10 +861,10 @@ footer ul li {
   margin-left: 10px;
 }
 
-footer ul li :hover {
+footer ul li:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -886,5 +886,11 @@ footer ul li a img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  footer ul li a span {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
