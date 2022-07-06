@@ -343,7 +343,7 @@ section{
         padding: 1rem;
         @media (max-width: 600px) {
           height: auto;
-          
+          font-size: 1rem;
         }
         header{
           display: flex;
@@ -427,11 +427,11 @@ section{
        
         summary{
             height: 100%;
-            font-size: 24px;
+            font-size: 1.8rem;
             cursor: pointer;
             font-weight: bold;
             @media (max-width: 600px) {
-              font-size: 18px;
+              font-size: 1.3rem;
               
             }
           }
@@ -441,6 +441,7 @@ section{
           padding: 1rem;
           @media (max-width: 600px) {
             padding: 14px;
+            font-size: 1rem;
           }
         
       }
